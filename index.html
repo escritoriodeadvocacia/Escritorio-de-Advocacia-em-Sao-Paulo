@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escritorio de Advocacia em Sao Paulo</title>
   <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+  const dropdownWrapper = document.getElementById("dropdown-wrapper");
+  const dropdownButton = document.getElementById("dropdown-button");
+  const dropdownMenu = document.getElementById("dropdown-menu");
+
+  // Função para mostrar o menu
+  function showMenu() {
+    dropdownMenu.classList.remove("hidden");
+  }
+
+  // Função para esconder o menu
+  function hideMenu() {
+    dropdownMenu.classList.add("hidden");
+  }
+
+  dropdownWrapper.addEventListener("mouseenter", showMenu);
+  dropdownWrapper.addEventListener("mouseleave", hideMenu);
+</script>
+
 <header class="bg-white shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <!-- Logo -->
